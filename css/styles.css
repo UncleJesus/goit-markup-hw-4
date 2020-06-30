@@ -124,6 +124,7 @@ a {
       rgba(47, 48, 58, 0.8)
     ),
     url(../images/headerimg.jpg);
+  margin-bottom: 94px;
 }
 
 .banner-title {
@@ -175,6 +176,9 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
 .feature-list .text {
   color: var(--primary-text-color);
   font-size: 14px;
@@ -184,7 +188,24 @@ a {
 .feature {
   display: flex;
 }
+.feature-icon-bg {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+.feature-icon {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  width: 70px;
+  height: 70px;
+}
 
+/* WWD SECTION */
 .wwd-section .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -199,6 +220,7 @@ a {
 }
 .wwd-section .subtitle {
   margin-top: 0px;
+  padding-bottom: 27px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -281,6 +303,10 @@ a {
   margin-bottom: 16px;
 }
 
+.team-icon {
+  width: 20px;
+  height: 20px;
+}
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 .partners-section .list {
   display: flex;
