@@ -89,18 +89,16 @@ a {
   margin-right: 10px;
 }
 .smartphone {
+  vertical-align: middle;
   width: 10px;
   height: 14.94px;
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
-.envelope:hover,
-.envelope:active,
-.smartphone:hover,
-.smartphone:active {
-  fill: var(--accent-color);
+.address:hover,
+.address:active {
+  color: var(--accent-color);
 }
-
 .site-cont.list {
   margin-left: auto;
   display: flex;
@@ -108,9 +106,13 @@ a {
 .site-cont .item + .item {
   margin-left: 30px;
 }
-.site-cont .address:hover,
-.site-cont .address:focus {
-  color: var(--accent-color);
+.address:hover .envelope,
+.address:active .envelope {
+  fill: var(--accent-color);
+}
+.address:hover .smartphone,
+.address:active .smartphone {
+  fill: var(--accent-color);
 }
 /* WEB STUDIO CSS */
 
@@ -118,6 +120,8 @@ a {
 .banner {
   min-height: 600px;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -139,6 +143,7 @@ a {
   margin-bottom: 30px;
 }
 .banner-btn {
+  cursor: pointer;
   border: none;
   min-width: 200px;
   border-radius: 4px;
@@ -412,6 +417,7 @@ a {
 
 /* PORTFOLIO CSS */
 .btn-portf {
+  cursor: pointer;
   background: #f5f4fa;
   border: none;
   padding-top: 6px;
@@ -528,6 +534,7 @@ a {
   background-color: #2f303a;
 }
 .footer-logo {
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 .call-to-action {
@@ -572,12 +579,12 @@ a {
 
 .footer-flex {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  align-items: flex-start;
 }
 .footer-join {
+  margin-left: 69px;
+  margin-top: 72px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -600,7 +607,10 @@ a {
   margin-right: 20px;
 }
 
-.subscript-footer {
+.subscribe-footer {
+  margin-top: 72px;
+  margin-bottom: 94px;
+  margin-left: 94px;
   display: flex;
   flex-direction: column;
 }
@@ -612,4 +622,7 @@ a {
 .footer-icon {
   width: 20px;
   height: 20px;
+}
+.address-item {
+  margin-bottom: 60px;
 }
