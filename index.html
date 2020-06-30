@@ -19,9 +19,11 @@
       <div class="container main-nav">
         <!-- ВОПРОС -->
         <nav class="main-nav">
-          <a href="./index.html" class="logo"
-            ><img src="./images/webstudio.svg" alt="Логотип компании"
-          /></a>
+          <a href="./index.html" class="logo">
+            <svg class="icon-log">
+              <use href="./images/sprite.svg#icon-webstudioheader"></use>
+            </svg>
+          </a>
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link current">Студия</a>
@@ -35,12 +37,20 @@
 
         <ul class="site-cont list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="address"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="address">
+              <svg class="envelope">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="address">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="address">
+              <svg class="smartphone">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -54,9 +64,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <a class="banner-btn">
+          <button type="button" class="btn">
             <span class="btn-text">Заказать услугу</span>
-          </a>
+          </button>
         </div>
       </section>
 
@@ -417,4 +427,4 @@
   </body>
 </html>
 
-a display block widh 100%
+display block widh 100%

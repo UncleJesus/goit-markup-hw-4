@@ -50,6 +50,10 @@ a {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
+.icon-log {
+  width: 153px;
+  height: 31px;
+}
 
 .site-nav .link {
   display: block;
@@ -78,6 +82,25 @@ a {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.envelope {
+  width: 16px;
+  height: 11.2px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+.smartphone {
+  width: 10px;
+  height: 14.94px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+.envelope:hover,
+.envelope:active,
+.smartphone:hover,
+.smartphone:active {
+  fill: var(--accent-color);
+}
+
 .site-cont.list {
   margin-left: auto;
   display: flex;
@@ -93,9 +116,14 @@ a {
 
 /* БЛОК ГЕРОЙ */
 .banner {
-  background-color: var(--primary-text-color);
   min-height: 600px;
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/headerimg.jpg);
 }
 
 .banner-title {
@@ -302,9 +330,11 @@ a {
   padding-right: 22px;
   padding-left: 22px;
 }
-.btn-text:hover,
-.btn-text:focus {
-  color: var(--accent-color);
+.btn {
+  border: none;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
 }
 .btn-text {
   font-weight: 500;
@@ -312,7 +342,7 @@ a {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: var(--primary-white-color);
 }
 .filter-item .title {
   font-style: normal;
