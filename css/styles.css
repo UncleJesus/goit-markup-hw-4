@@ -130,7 +130,6 @@ a {
 .banner-title {
   margin-top: 0px;
   margin-bottom: 0px;
-
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -140,6 +139,7 @@ a {
   margin-bottom: 30px;
 }
 .banner-btn {
+  border: none;
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
@@ -206,6 +206,9 @@ a {
 }
 
 /* WWD SECTION */
+.wwd-section {
+  margin-bottom: 94px;
+}
 .wwd-section .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -249,6 +252,7 @@ a {
 }
 .team-link:hover,
 .team-link:active {
+  fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 .team-link:not(:last-child) {
@@ -423,6 +427,7 @@ a {
   background-color: var(--accent-color);
 }
 .btn {
+  border-radius: 4px;
   border: none;
   width: 200px;
   height: 50px;
@@ -434,7 +439,6 @@ a {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
 .filter-item .title {
   font-style: normal;
